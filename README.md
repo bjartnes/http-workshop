@@ -16,7 +16,24 @@ There are a varieties of tools we can use for this workshop, some tools will be 
 They can be run either in GitHub codespace, as dev containers locally on your laptop or by installing the tools on your linux machine, if you have a Mac it might work, on Windows the only reasonable option is to use WSL2 or a devcontainer. All these options will be decsribed in detail.
 
 ### WSL2 / Linux (and likely Mac)
-Setup...
+Install WSL2, I typically use Ubuntu from the Microsoft store https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV 
+To make sure you have updated package repositories run
+```
+sudo apt-get update
+```
+#### netcat
+nc should be installed in Ubunut, if you
+
+#### jq
+Useful for parsing JSON.
+```
+sudo apt-get install jq
+```
+#### nettools
+```
+sudo apt-get install net-tools
+```
+tcpdump....
 
 ### GitHub Codespace
 Setup...
