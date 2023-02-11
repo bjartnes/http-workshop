@@ -26,31 +26,56 @@ Setup...
 
 # Assignments
 The order is the intended workshop order, but feel free to skip to whatever you find most interesting. 
+I use some emojies to indicate if things can be skipped or not.
+🧱 is considered a foundation of sort, and should not be skipped. These will be tutorial-ish.
+💡 These are good to get better insights, likely include some more thinking/playing around on your own. Can be skipped.
+🎓 For extra points and deep-dive, feel free to skip, likely includes more work and things to figure out on your own.
+
 
 ## Part 1 - TCP/IP the foundation
 We need to have a basic understanding of the layer underneath us - TCP/IP. TCP/IP is hard to build, but can be simple to use, so it is a great foundation to stand on.
 It also provides some motivation for a protocol and understanding of the basic tools.
 
 ### 🧱 - Basic chatting with netcat over TCP/IP
-This is a must-do
+This is a must-do. Let's just talk to eachother over HTTP
 
-### Hanging up properly, closing sockets
+### 💡Hanging up properly, closing sockets
 This is nice, useful to understand how HTTP sockets work and scale and get re-used etc, but not required for the workshop.
 
+### 🎓 Inspecting traffic with tcpdump and/or wireshark.
+
+### 🎓 Chatting to a machine in the cloud
+Setting up netcat on a publicly accessible virtual machine. Allow you to talk to multiple users.
+
+### 🎓 Using my HTTP chatbot
+Highly experimental software.... 
+https://github.com/bjartwolf/http_chatbot
+
 ## Part 2 - HTTP basics
-### 🧱 Client
+### 🧱 Client  - talking to some internetservices
+Let's call some web services on the internet and talk to them.
+
 
 ### 🧱 Server
+Let's be a server and talk to curl or postman or something.
 
-## Part 3 - Sending json
+## Part 3 - Playing with responses
+### 🧱 Redirects
 Might be some server-sent events etc in here too...
 ### 🧱 Sending json to a curl client
+Let's build modern web API to send JSON to a curl client3
 
-### Parsing JSON with jq
+
+### 💡 Parsing JSON with jq
+Sort of the same, but let's learn a little bit of jq, because this is a cute and useful tool. 
+
 
 ## Part 5 - Talking to browsers/HTML/code-on-demand
 Might be some server-sent events etc in here too...
 ### 🧱 Rendering HTML to a browser
+
+### 💡 Redirecting with javascript
+Instead of redirecting with 302s like earlier, try to send HTML with a script to redirect using ```window.location = URL```
 
 ### Server-sent events
 
