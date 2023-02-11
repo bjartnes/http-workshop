@@ -39,6 +39,14 @@ It also provides some motivation for a protocol and understanding of the basic t
 ### 1.1 🧱 - Basic chatting with netcat over TCP/IP
 This is a must-do. Let's just talk to eachother over HTTP
 
+<details>
+    <summary>Video explanation</summary>
+  
+https://user-images.githubusercontent.com/88324093/218261638-92c15a84-5366-4ed8-be71-0806ec0892f3.mp4
+
+</details>
+
+
 ### 1.2 💡Hanging up properly, closing sockets
 This is nice, useful to understand how HTTP sockets work and scale and get re-used etc, but not required for the workshop.
 
