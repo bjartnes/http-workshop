@@ -27,71 +27,75 @@ Setup...
 # Assignments
 The order is the intended workshop order, but feel free to skip to whatever you find most interesting. 
 I use some emojies to indicate if things can be skipped or not.
-🧱 is considered a foundation of sort, and should not be skipped. These will be tutorial-ish.
-💡 These are good to get better insights, likely include some more thinking/playing around on your own. Can be skipped.
-🎓 For extra points and deep-dive, feel free to skip, likely includes more work and things to figure out on your own.
+- 🧱 is considered a foundation of sort, and should not be skipped. These will be tutorial-ish.
+- 💡 These are good to get better insights, likely include some more thinking/playing around on your own. Can be skipped.
+- 🎓 For extra points and deep-dive, feel free to skip, likely includes more work and things to figure out on your own.
 
 
 ## Part 1 - TCP/IP the foundation
 We need to have a basic understanding of the layer underneath us - TCP/IP. TCP/IP is hard to build, but can be simple to use, so it is a great foundation to stand on.
 It also provides some motivation for a protocol and understanding of the basic tools.
 
-### 🧱 - Basic chatting with netcat over TCP/IP
+### 1.1 🧱 - Basic chatting with netcat over TCP/IP
 This is a must-do. Let's just talk to eachother over HTTP
 
-### 💡Hanging up properly, closing sockets
+### 1.2 💡Hanging up properly, closing sockets
 This is nice, useful to understand how HTTP sockets work and scale and get re-used etc, but not required for the workshop.
 
-### 🎓 Inspecting traffic with tcpdump and/or wireshark.
+### 1.3 🎓 Inspecting traffic with tcpdump and/or wireshark.
 
-### 🎓 Chatting to a machine in the cloud
+### 1.4 🎓 Chatting to a machine in the cloud
 Setting up netcat on a publicly accessible virtual machine. Allow you to talk to multiple users.
 
-### 🎓 Using my HTTP chatbot
+### 1.5 🎓 Using my HTTP chatbot
 Highly experimental software.... 
 https://github.com/bjartwolf/http_chatbot
 
 ## Part 2 - HTTP basics
-### 🧱 Client  - talking to some internetservices
+### 2.1 🧱 Client  - talking to some internetservices
 Let's call some web services on the internet and talk to them.
 
 
-### 🧱 Server
+### 2.2 🧱 Server
 Let's be a server and talk to curl or postman or something.
 
 ## Part 3 - Playing with responses
-### 🧱 Redirects
+
+### 3.1 🧱 Redirects
 Might be some server-sent events etc in here too...
-### 🧱 Sending json to a curl client
+
+### 3.2 🧱 Sending json to a curl client
 Let's build modern web API to send JSON to a curl client3
 
-
-### 💡 Parsing JSON with jq
+### 3.3 💡 Parsing JSON with jq
 Sort of the same, but let's learn a little bit of jq, because this is a cute and useful tool. 
 
 
 ## Part 5 - Talking to browsers/HTML/code-on-demand
 Might be some server-sent events etc in here too...
-### 🧱 Rendering HTML to a browser
+###  5.1 🧱 Rendering HTML to a browser
 
-### 💡 Redirecting with javascript
+### 5.2 💡 Redirecting with javascript
 Instead of redirecting with 302s like earlier, try to send HTML with a script to redirect using ```window.location = URL```
 
-### Server-sent events
+### 5.3 💡 Server-sent events
+Pushing cats and dogs as images over SSE.
 
-### CORS
+### 5.4 🎓 CORS
 How CORS work - by hand.
 
 
-### 401 and 403s
+### 5.5 🎓 401 and 403s
 Maybe do some hand-rolled security
-## Part 5 - Talking through proxies
+## Part 6 - Talking through proxies
 This is where we introduce HTTP proxies, such as nginx.
+### 💡6.1  talking thorugh nginx
 
-## Part 6 - Maybe some Azure stuff and other REAL life stuff...
+
+## Part 7 - Maybe some Azure stuff and other REAL life stuff...
 Why not try to run this in a virtual machine behind a public IP?
 
-### PKCE to Azure B2C by hand
+### 7.1 🎓 PKCE to Azure B2C by hand
 This is a useful exercise to understand how to work with real, distributed hypermedia applications by hand... 
 https://blog.bjartnes.dev/posts/auth-flow-pkce/
 
