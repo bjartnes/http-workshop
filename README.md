@@ -17,21 +17,19 @@ They can be run either in GitHub codespace, as dev containers locally on your la
 
 Wireshark can also be fun to install to monitor traffic, but it is not required.
 
-1. Setup on codespace (Easy/cloudbased)
+1. Cloud-based ⛈️: Setup on codespace (Easy/cloudbased)
 This is the simplest way, everything runs in the browser, but it requires a GitHub Teams account or similar that
 have codespaces available.
 See documentation [here](setup_descriptions/setup_codespace.md)
 
-2. Devcontainer locally on your machine 
-This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all
-the tools required automatically.
+2. Devcontainer on local machine🐋: This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all the tools required automatically.
 See documentation [here](setup_descriptions/setup_devcontainer.md)
 
-3. Setup on WSL2
+3. Windows: Setup on WSL2
 On Windows, running Linux is easy to do using WSL2.
 See documentation [here](setup_descriptions/setup_wsl.md)
 
-4. Local setup
+4. Mac or Linux: Local setup
 This requires a mac or linux installation, as these tools really does not work properly on Windows.
 Descriptions are for Ubuntu, so you might have to figure out how to do it on your distro...
 See documentation [here](setup_descriptions/setup_linuxmac.md)
