@@ -22,7 +22,7 @@ To make sure you have updated package repositories run
 sudo apt-get update
 ```
 #### netcat
-nc should be installed in Ubunut, if you
+nc should be installed in Ubuntu, but can typically be installed as (todo: check..) netcat net-tools... or something.
 
 #### jq
 Useful for parsing JSON.
