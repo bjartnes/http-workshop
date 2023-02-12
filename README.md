@@ -18,6 +18,9 @@ They can be run either in GitHub codespace, as dev containers locally on your la
 ### WSL2 / Linux (and likely Mac)
 Install WSL2, I typically use Ubuntu from the Microsoft store https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV 
 To make sure you have updated package repositories run
+#### WSL notes to be added to devcontainer
+apt-get update
+apt-get install netcat net-tools dnsutils
 ```
 sudo apt-get update
 ```
