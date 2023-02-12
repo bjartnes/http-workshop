@@ -63,16 +63,17 @@ https://user-images.githubusercontent.com/88324093/218261638-92c15a84-5366-4ed8-
 
 </details>
 
-
 ### 1.2 💡Hanging up properly, closing sockets
 This is nice, useful to understand how HTTP sockets work and scale and get re-used etc, but not required for the workshop.
 
-### 1.3 🎓 Inspecting traffic with tcpdump and/or wireshark.
+### 1.3 💡Finding the IP adress of domains using nslookup
 
-### 1.4 🎓 Chatting to a machine in the cloud
+### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
+
+### 1.5 🎓 Chatting to a machine in the cloud
 Setting up netcat on a publicly accessible virtual machine. Allow you to talk to multiple users.
 
-### 1.5 🎓 Using my HTTP chatbot
+### 1.6 🎓 Using my HTTP chatbot
 Highly experimental software.... 
 https://github.com/bjartwolf/http_chatbot
 
