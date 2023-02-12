@@ -122,7 +122,7 @@ This is where we introduce HTTP proxies, such as nginx.
 Why not try to run this in a virtual machine behind a public IP?
 
 ### 7.1 🎓 PKCE to Azure B2C by hand
-This is a useful exercise to understand how to work with real, distributed hypermedia applications by hand... 
+This is a useful exercise to understand how to work with real, distributed hypermedia applications by hand... We start a browser with a redirect link where we listen to the redirect using netcat.
 https://blog.bjartnes.dev/posts/auth-flow-pkce/
 
 # Background material
