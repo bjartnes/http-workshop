@@ -15,14 +15,18 @@ My NDC 2023 workshop https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-b
 There are a varieties of tools we can use for this workshop, some tools will be considers "must-haves", some are fun to try and optional.
 They can be run either in GitHub codespace, as dev containers locally on your laptop or by installing the tools on your linux machine, if you have a Mac it might work, on Windows the only reasonable option is to use WSL2 or a devcontainer. All these options will be decsribed in detail.
 
-
 ### Devcontainer locally on your machine
-Setup...
+This works on Mac/Linux/Windows. It does require docker and VS Code 
+
+See documentation [here](setup_descriptions/setup_devcontainer.md)
 
 ### Setup on WSL2
+On Windows, running Linux is easy to do using WSL2.
 See documentation [here](setup_descriptions/setup_wsl.md)
 
 ### Setup on codespace
+This is the simplest way, everything runs in the browser, but it requires a GitHub Teams account or similar that
+have codespaces available.
 See documentation [here](setup_descriptions/setup_codespace.md)
 
 # Assignments

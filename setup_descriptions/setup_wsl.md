@@ -1,22 +1,20 @@
-### WSL2 / Linux (and likely Mac)
+# WSL2
 Install WSL2, I typically use Ubuntu from the Microsoft store https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV 
-To make sure you have updated package repositories run
-#### WSL notes to be added to devcontainer
-apt-get update
-apt-get install netcat net-tools dnsutils
+
+## Installing tools
+To install requirements, open your Ubuntu installation and run the following commands
+
 ```
 sudo apt-get update
+sudo apt-get -y install netcat net-tools dnsutils nginx gnupg2 tcpdump jq
 ```
-#### netcat
-nc should be installed in Ubuntu, but can typically be installed as (todo: check..) netcat net-tools... or something.
 
-#### jq
-Useful for parsing JSON.
+## Installing k6 (optional)
+
 ```
-sudo apt-get install jq
+gpg -k
+gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
+echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
+sudo apt-get update \
+    && apt-get -y install --no-install-recommends k6
 ```
-#### nettools
-```
-sudo apt-get install net-tools
-```
-tcpdump....
