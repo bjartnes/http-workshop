@@ -116,6 +116,22 @@ Might be some server-sent events etc in here too...
 ### 5.2 💡 Redirecting with javascript
 Instead of redirecting with 302s like earlier, try to send HTML with a script to redirect using ```window.location = URL```
 
+
+<details>
+    <summary>Solution</summary>
+  
+```
+HTTP/1.1 200 OK
+Content-Type: text/html
+    
+<HTML> 
+<BODY>
+<SCRIPT>
+window.location = "https://www.vg.no";
+</SCRIPT>    
+```
+</details>
+
 ### 5.3 💡 Server-sent events
 Pushing cats and dogs as images over SSE.
 
