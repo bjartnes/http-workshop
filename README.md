@@ -114,8 +114,15 @@ Might be some server-sent events etc in here too...
 ###  5.1 🧱 Rendering HTML to a browser
 
 ### 5.2 💡 Redirecting with javascript
-Instead of redirecting with 302s like earlier, try to send HTML with a script to redirect using ```window.location = URL```
+Instead of redirecting with 302s like earlier, try to redirect with javascript 
 
+<details>
+    <summary>Hint</summary>
+We can send HTML with a SCRIPT tag, and then use the window.location to send the browser somewhere else.
+```
+window.location = URL
+```
+</details>
 
 <details>
     <summary>Solution</summary>
