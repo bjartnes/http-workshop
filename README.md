@@ -15,8 +15,16 @@ My NDC 2023 workshop https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-b
 There are a varieties of tools we can use for this workshop, some tools will be considers "must-haves", some are fun to try and optional.
 They can be run either in GitHub codespace, as dev containers locally on your laptop or by installing the tools on your linux machine, if you have a Mac it might work, on Windows the only reasonable option is to use WSL2 or a devcontainer. All these options will be decsribed in detail.
 
-### Devcontainer locally on your machine
-This works on Mac/Linux/Windows. It does require docker and VS Code 
+Wireshark can also be fun to install to monitor traffic, but it is not required.
+
+### Setup on codespace (Easy/cloudbased)
+This is the simplest way, everything runs in the browser, but it requires a GitHub Teams account or similar that
+have codespaces available.
+See documentation [here](setup_descriptions/setup_codespace.md)
+
+### Devcontainer locally on your machine 
+This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all
+the tools required automatically.
 
 See documentation [here](setup_descriptions/setup_devcontainer.md)
 
@@ -24,10 +32,11 @@ See documentation [here](setup_descriptions/setup_devcontainer.md)
 On Windows, running Linux is easy to do using WSL2.
 See documentation [here](setup_descriptions/setup_wsl.md)
 
-### Setup on codespace
-This is the simplest way, everything runs in the browser, but it requires a GitHub Teams account or similar that
-have codespaces available.
-See documentation [here](setup_descriptions/setup_codespace.md)
+### Local setup
+This requires a mac or linux installation, as these tools really does not work properly on Windows.
+Descriptions are for Ubuntu, so you might have to figure out how to do it on your distro...
+See documentation [here](setup_descriptions/setup_linuxmac.md)
+
 
 # Assignments
 The order is the intended workshop order, but feel free to skip to whatever you find most interesting. 
