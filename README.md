@@ -42,7 +42,7 @@ I use some emojies to indicate if things can be skipped or not.
 - 💡 These are good to get better insights, likely include some more thinking/playing around on your own. Can be skipped.
 - 🎓 For extra points and deep-dive, feel free to skip, likely includes more work and things to figure out on your own.
 
-- [Part 1 TCP/IP Basics](assignments/part_1_tcpip/tcp.md.md)
+- [Part 1 TCP/IP Basics](assignments/part_1_tcpip/tcp.md)
 - [Part 2 HTTP Basics](assignments/part_2_http_basics/http_basics.md)
 - [Part 3 Responses](assignments/part_3_responses/responses.md)
 - [Part 4 Browsers](assignments/part_4_browsers/html.md)
