@@ -54,7 +54,16 @@ We need to have a basic understanding of the layer underneath us - TCP/IP. TCP/I
 It also provides some motivation for a protocol and understanding of the basic tools.
 
 ### 1.1 🧱 - Basic chatting with netcat over TCP/IP
-This is a must-do. Let's just talk to eachother over HTTP
+This is a must-do. Let's just talk locally over TCP/IP using netcat.
+To listen on a port
+```
+nc -l localhost 8080
+```
+
+To connect to that port
+```
+nc localhost 8080 
+```
 
 <details>
     <summary>Video explanation</summary>
