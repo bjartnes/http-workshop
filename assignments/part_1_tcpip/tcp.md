@@ -56,15 +56,15 @@ Try looking up the ip of
 ### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
 
 ### 1.6 🎓 Chatting over TLS 
-Try talking to www.vg.no and request their frontpage by sending the 
+Try talking to bjartnes.dev and request the frontpage by sending the 
 ```
 GET / HTTP/1.1
-Host: www.vg.no
+Host: bjartnes.dev 
 ```
 Try to follow (as in, by hand, a new request) the link...
 
 Now, try to connect to vg the same way, but his time using 
-```ncat --ssl www.vg.no 443```
+```ncat --ssl bjartnes.dev 443```
 and send the same request.
 We are not going to use TLS so much in this workshop, but it is important to know about as it is used everywhere and sneaks in over TCP to make the connections secure.
 
