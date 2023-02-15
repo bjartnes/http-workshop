@@ -6,7 +6,7 @@ To install requirements, open your Ubuntu installation and run the following com
 
 ```
 sudo apt-get update
-sudo apt-get -y install netcat net-tools dnsutils nginx gnupg2 tcpdump jq
+sudo apt-get -y install netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat
 ```
 
 ## Installing k6 (optional)

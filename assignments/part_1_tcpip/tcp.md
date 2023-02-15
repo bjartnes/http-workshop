@@ -21,11 +21,12 @@ To listen on a port
 nc -l localhost 8080
 ```
 
-To connect to that port (the ephermal port is picked for us automatically)
+Let that run, and open another terminal to connect to that port (the ephermal port is picked for us automatically):
 ```
 nc localhost 8080 
 ```
 
+Type things, netcat sends line by line as you hit <kbd>ENTER</kbd>.
 <details>
     <summary>Video explanation</summary>
   
@@ -35,6 +36,9 @@ https://user-images.githubusercontent.com/88324093/218261638-92c15a84-5366-4ed8-
 
 ### 1.2 💡Hanging up properly, closing sockets
 This is nice, useful to understand how HTTP sockets work and scale and get re-used etc, but not required for the workshop.
+By starting netcat with the ```-q 0``` it will respect hanging up (sending EOF). We send EOF using <kbd>CTRL</kbd>+<kbd>D</kbd>.
+
+This is also shown in the video in 1.1.
 
 ### 1.3 💡Finding the IP adress of domains using nslookup
 

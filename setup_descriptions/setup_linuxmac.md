@@ -12,10 +12,11 @@ Tools used are
 - netcat (nc)
 - nslookup (net-tools)
 - tcpdump
+- ncat (optionally, for ssl) 
 
 ```
 sudo apt-get update
-sudo apt-get -y install netcat net-tools dnsutils nginx gnupg2 tcpdump jq
+sudo apt-get -y install netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat
 ```
 
 ## Installing k6 (optional)

@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 RUN apt-get update \
-    && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq
+    && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat
 
 
 # To install k6
