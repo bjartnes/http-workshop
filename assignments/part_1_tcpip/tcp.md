@@ -38,6 +38,11 @@ This is nice, useful to understand how HTTP sockets work and scale and get re-us
 
 ### 1.3 💡Finding the IP adress of domains using nslookup
 
+<details>
+    <summary>Solution</summary>
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/1174441/219027126-8764de59-ab18-4c29-b941-1b66ff559313.png">
+
+</details>
 ### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
 
 ### 1.5 🎓 Chatting to a machine in the cloud
