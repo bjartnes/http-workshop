@@ -53,3 +53,6 @@ I use some emojies to indicate if things can be skipped or not.
 # Background material
 
 A lot of the examples are shown in videos on Twitter and summarized in my https://blog.bjartnes.dev/posts/http-love, and more will come there two. I might find other formats, YouTube etc, to distribute the videos to make it easy to link it to specific assignments/explanations.
+
+How I set up my terminal in WSL2 https://blog.bjartnes.dev/posts/how-i-set-up-powershell-to-look-good/
+(I will likely do the same blogpost for Ubuntu, to show how to make it look good in Windows.)
