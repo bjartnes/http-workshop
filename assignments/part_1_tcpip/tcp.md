@@ -54,7 +54,12 @@ Try looking up the ip of
 
 </details>
 ### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
+Wireshark is a graphical UI which is a little easier to use.
 
+On localhost, it is easiest to use ```-i lo``` to listen to the loopback interface, when talking to other machines we can find the interface using ```ifconfig```
+```
+sudo tcpdump -i lo port 8080 -v
+```
 ### 1.6 🎓 Chatting over TLS 
 Try talking to bjartnes.dev and request the frontpage by sending the 
 ```
