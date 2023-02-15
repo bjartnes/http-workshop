@@ -53,13 +53,18 @@ Try looking up the ip of
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/1174441/219027126-8764de59-ab18-4c29-b941-1b66ff559313.png">
 
 </details>
+
 ### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
-Wireshark is a graphical UI which is a little easier to use.
+Wireshark is a graphical UI which is a little easier to use, but tcpdump works on all these machines and from the terminal.
+To use it, open a third terminal.
 
 On localhost, it is easiest to use ```-i lo``` to listen to the loopback interface, when talking to other machines we can find the interface using ```ifconfig```
 ```
 sudo tcpdump -i lo port 8080 -v
 ```
+
+You can observe the packages, the three way handshake etc. We will come back to using it later as we talk HTTP.
+
 ### 1.6 🎓 Chatting over TLS 
 Try talking to bjartnes.dev and request the frontpage by sending the 
 ```
