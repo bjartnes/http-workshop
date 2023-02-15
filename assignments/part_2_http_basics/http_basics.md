@@ -21,3 +21,14 @@ Let's be a server and talk to curl or postman or something.
 
 ## 2.3 🧱 Host headers
 Let's connect with curl to the same IP with different hostnames.
+
+## 2.4 🎓 TCP Dump
+
+Using tcpdump to monitor what was going on in the previous challenges. (Or Wireshark, if you have it) 
+```
+sudo tcpdump -i lo port 8080 -v
+```
+or 
+```
+tcpdump -i lo port 8080 -v
+```
