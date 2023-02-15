@@ -32,3 +32,10 @@ or
 ```
 tcpdump -i lo port 8080 -v
 ```
+
+<details>
+    <summary>An example</summary>
+
+https://user-images.githubusercontent.com/1174441/219039131-e325d2b2-d3c2-47c3-bffe-f1d2d468b181.mp4
+</details>
+
