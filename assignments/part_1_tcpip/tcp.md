@@ -55,9 +55,22 @@ Try looking up the ip of
 </details>
 ### 1.4 🎓 Inspecting traffic with tcpdump and/or wireshark.
 
-### 1.5 🎓 Chatting to a machine in the cloud
+### 1.6 🎓 Chatting over TLS 
+Try talking to www.vg.no and request their frontpage by sending the 
+```
+GET / HTTP/1.1
+Host: www.vg.no
+```
+Try to follow (as in, by hand, a new request) the link...
+
+Now, try to connect to vg the same way, but his time using 
+```ncat --ssl www.vg.no 443```
+and send the same request.
+We are not going to use TLS so much in this workshop, but it is important to know about as it is used everywhere and sneaks in over TCP to make the connections secure.
+
+### 1.7 🎓 Chatting to a machine in the cloud
 Setting up netcat on a publicly accessible virtual machine. Allow you to talk to multiple users.
 
-### 1.6 🎓 Using my HTTP chatbot
+### 1.8 🎓 Using my HTTP chatbot
 Highly experimental software.... 
 https://github.com/bjartwolf/http_chatbot
