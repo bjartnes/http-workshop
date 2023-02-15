@@ -41,6 +41,12 @@ By starting netcat with the ```-q 0``` it will respect hanging up (sending EOF).
 This is also shown in the video in 1.1.
 
 ### 1.3 💡Finding the IP adress of domains using nslookup
+DNS can help us find the IP adresses based on a domain name. We can use the tool ```nslookup blog.bjartnes.dev``` for example.
+Try looking up the ip of
+- bjartnes.dev
+- blog.bjartnes.dev
+- cats.bjartnes.dev
+- dogs.bjartnes.dev
 
 <details>
     <summary>Solution</summary>
