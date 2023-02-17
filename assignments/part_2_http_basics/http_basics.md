@@ -15,14 +15,33 @@ GET / HTTP/1.1
 Host: bjartnes.dev
 ```
 
+### something something boring about line endings too
+OMG
+```
+echo -ne 'GET / HTTP/1.1\r\nHost: info.cern.ch\r\n\r\n' | nc info.cern.ch 80
+nc info.cern.ch 80 -C
+````
+### 2.2 🎓 Chatting over TLS 
+Try talking to bjartnes.dev and request the frontpage by sending the 
+```
+GET / HTTP/1.1
+Host: bjartnes.dev 
+```
+Try to follow (as in, by hand, a new request) the link...
 
-## 2.2 🧱 Server
+Now, try to connect to vg the same way, but his time using 
+```ncat --ssl bjartnes.dev 443```
+and send the same request.
+We are not going to use TLS so much in this workshop, but it is important to know about as it is used everywhere and sneaks in over TCP to make the connections secure.
+
+
+## 2.3 🧱 Server
 Let's be a server and talk to curl or postman or something.
 
-## 2.3 🧱 Host headers
+## 2.4 🧱 Host headers
 Let's connect with curl to the same IP with different hostnames.
 
-## 2.4 🎓 TCP Dump
+## 2.5 🎓 TCP Dump
 
 Using tcpdump to monitor what was going on in the previous challenges. (Or Wireshark, if you have it) 
 ```

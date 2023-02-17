@@ -65,22 +65,10 @@ sudo tcpdump -i lo port 8080 -v
 
 You can observe the packages, the three way handshake etc. We will come back to using it later as we talk HTTP.
 
-### 1.6 🎓 Chatting over TLS 
-Try talking to bjartnes.dev and request the frontpage by sending the 
-```
-GET / HTTP/1.1
-Host: bjartnes.dev 
-```
-Try to follow (as in, by hand, a new request) the link...
-
-Now, try to connect to vg the same way, but his time using 
-```ncat --ssl bjartnes.dev 443```
-and send the same request.
-We are not going to use TLS so much in this workshop, but it is important to know about as it is used everywhere and sneaks in over TCP to make the connections secure.
-
-### 1.7 🎓 Chatting to a machine in the cloud
+### 1.5 🎓 Chatting to a machine in the cloud
 Setting up netcat on a publicly accessible virtual machine. Allow you to talk to multiple users.
 
-### 1.8 🎓 Using my HTTP chatbot
+### 1.6 🎓 Using my HTTP chatbot
 Highly experimental software.... 
+It does let you see port numbers.
 https://github.com/bjartwolf/http_chatbot
