@@ -26,6 +26,8 @@ Let that run, and open another terminal to connect to that port (the ephermal po
 nc localhost 8080 
 ```
 
+With TCP/IP we get a nice way of sending data back and forth - but there is not structure to what we send. This is what we will explore when we dig into HTTP.
+
 Type things, netcat sends line by line as you hit <kbd>ENTER</kbd>.
 <details>
     <summary>Video explanation</summary>
