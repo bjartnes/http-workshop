@@ -70,4 +70,18 @@ Content-Type: application/json
 
 should work, as should any other valid json response. 
 
-🗒️: As we are on both sides here, it works just as fine without the accept header and the content-type header (Try it!), but to respect the protocol we have to remember to be specific about what we ask for and we can return - we shouldn't have to guess.
+🗒️: As we are on both sides here, it works just as fine without the accept header and the content-type header (Try it!), but to respect the protocol we have to remember to be specific about what we ask for and we can return - we shouldn't have to guess. 
+
+## Part 2.3 Talking to a browser
+
+We will expand more on browsers later, because browsers are very fun, but for the completeness of the examples here we will try to do a simple server that return text to a browser.
+Listen to a port, for example 10000, by ```nc -l localhost 10000 -q 0``` and then point
+a browser to http://localhost:10000
+
+Answer something along the lines of
+```
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+Hello
+```
