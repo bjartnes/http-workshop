@@ -51,7 +51,6 @@ nc info.cern.ch 80 -C
 To get both line endings and TLS to work, for example to talk to https://info.cern.ch, use
 ```ncat --ssl info.cern.ch 443 -C```
 
-
 ## 3.4 Talk to website
 Talk to some of your favorite websites. Try to look up their IP, connect to them and ask for their homepage.
 
