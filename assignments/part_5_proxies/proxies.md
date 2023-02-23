@@ -64,3 +64,6 @@ server {
 
 ## 🎓 5.3 Load testing
 Let's see what the cache can do for us.
+
+## 🎓 5.4 Port forwarding from GitHub codespaces
+GitHub Codespace (if you set the workshop up using GitHub codespaces) can forward traffic on HTTP, change the proxy to HTTP and listen on a port. Similar to nginx (it might be nginx...), we have to set content length for it to work properly without doing chunked encoding.
