@@ -43,5 +43,24 @@ HEI
 ```
 Try to call this endpoint multiple times. You can do it by hand, but ```curl http://localhost/``` is a litte bit faster.
 
+### Entire nginx config for cache setup 
+Deleted all the comments.
+```
+proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=my_cache:10m max_size=10g inactive=60m use_temp_path=off;
+
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	server_name _;
+
+	location / {
+		proxy_cache my_cache; 
+		proxy_pass http://127.0.0.1:10000;
+	}
+}
+```
+
+
 ## 🎓 5.3 Load testing
 Let's see what the cache can do for us.
