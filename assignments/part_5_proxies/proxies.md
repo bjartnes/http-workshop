@@ -11,6 +11,8 @@ This is where we introduce HTTP proxies, such as nginx.
 
 ![image](https://user-images.githubusercontent.com/88324093/220857750-bf03fa6b-b16d-48b6-919b-f9ec772a48fc.png)
 
+![image](https://user-images.githubusercontent.com/88324093/220858616-848cec75-4391-4f69-b03d-f7a157bdbb1f.png)
+
 ## 💡5.2  talking thorugh nginx with cache on
 
 ## 🎓 5.3 Load testing
