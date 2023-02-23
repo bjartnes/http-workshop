@@ -3,7 +3,7 @@ This is where we introduce HTTP proxies, such as nginx.
 
 ![Proxy](proxy.drawio.png)
 
-![Nginx](nginx_set.drawio.png)
+![Nginx](nginx_setup.drawio.png)
 
 
 ## 💡5.1  talking thorugh nginx
