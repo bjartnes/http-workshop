@@ -32,13 +32,16 @@ proxy_cache my_cache;
 ```
 before the proxy pass line, to tell nginx to use the cache.
 
-Now, if you in the response add a HTTP header for cache and to 
+Now, if you in the response add a HTTP header for cache-control, for example: 
 ```
 HTTP/1.1 200 OK
 Content-Type: text/plain
 Cache-Control: public, max-age=604800
-```
+Content-Length: 3
 
+HEI
+```
+Try to call this endpoint multiple times. You can do it by hand, but ```curl http://localhost/``` is a litte bit faster.
 
 ## 🎓 5.3 Load testing
 Let's see what the cache can do for us.
