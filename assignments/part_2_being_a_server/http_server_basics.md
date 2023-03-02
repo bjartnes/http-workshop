@@ -49,7 +49,7 @@ If we want to not only accept plain text, but something slightly (only slightly)
 
 To parse the response as json, we can pipe the result into jq. Start the server again by listening to port 8080 as in the previous exercise and ask for json and pipe the result to jq.
 ```
-curl http://localhost:8080/foo -H 'Accept: application/json | jq
+curl http://localhost:8080/foo -H 'Accept: application/json' | jq
 ```
 
 The result should look something like:
