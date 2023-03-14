@@ -1,8 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 RUN apt-get update \
-    && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat
-
+    && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
 
 # To install k6
 RUN gpg -k
@@ -11,5 +10,3 @@ RUN echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.
 
 RUN apt-get update \
     && apt-get -y install --no-install-recommends k6
-
-
