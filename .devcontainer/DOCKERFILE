@@ -10,4 +10,3 @@ RUN echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.
 RUN apt-get update \
     && apt-get -y install --no-install-recommends k6
 
-USER Codespace
