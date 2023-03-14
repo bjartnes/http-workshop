@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
-USER Root
 RUN apt-get update \
     && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
 
