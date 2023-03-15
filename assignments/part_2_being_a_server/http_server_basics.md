@@ -78,6 +78,12 @@ We will expand more on browsers later, because browsers are very fun, but for th
 Listen to a port, for example 10000, by ```nc -l localhost 10000 -q 0``` and then point
 a browser to http://localhost:10000
 
+If you are working inside a GitHub Codespace, the simplest thing is to use a terminal browser. Carbonyl is already installed, and can load a we
+```
+carbonyl http://localhost:10000 --no-sandbox
+```
+
+
 Answer something along the lines ofg
 ```
 HTTP/1.1 200 OK
