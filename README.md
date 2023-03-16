@@ -22,7 +22,7 @@ This is the simplest way, everything runs in the browser, but it requires a GitH
 have codespaces available.
 See documentation [here](setup_descriptions/setup_codespace.md)
 
-2. 🐋 Devcontainer on local machine: This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all the tools required automatically.
+2. 🐋 Devcontainer on local machine: This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all the tools required automatically once that is setup. Docker Desktop should be possible to run as a personal user under the education and open-source clause, as this is an open-source project for education https://www.docker.com/pricing/. 
 See documentation [here](setup_descriptions/setup_devcontainer.md)
 
 3. 🪟 Windows: Setup on WSL2
