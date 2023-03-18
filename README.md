@@ -42,10 +42,20 @@ I use some emojies to indicate if things can be skipped or not.
 - 💡 These are good to get better insights, likely include some more thinking/playing around on your own. Can be skipped.
 - 🎓 For extra points and deep-dive, feel free to skip, likely includes more work and things to figure out on your own.
 
+### HTTP Basics
+This part covers the basics of HTTP. It should be possible to do with a basic knowledge of web development. 
+
 - [Part 1 TCP/IP Basics](assignments/part_1_tcpip/tcp.md)
 - [Part 2 HTTP Basics](assignments/part_2_being_a_server/http_server_basics.md)
 - [Part 3 Responses](assignments/part_3_being_a_client/http_basics.md)
 - [Part 4 Browsers](assignments/part_4_browsers/html.md)
+
+### Proxies and hypermedia 
+
+This part covers HTTP proxies (reverse-proxies) and goes into details of configuring nginx, running load tests on HTTP and
+some more advanced hypermedia applications and is likely going to be difficult to do without having worked
+with programming web applications. 
+
 - [Part 5 Proxies](assignments/part_5_proxies/proxies.md)
 - [Part 6 Hypermedia](assignments/part_6_hypermedia/hypermedia.md)
 
