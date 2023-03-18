@@ -67,6 +67,7 @@ curl http://localhost:8080/foo -H 'Accept: application/json' | jq
 
 The result should look something like:
 
+<sub>HTTP Request</sub>
 ```
 GET /foo HTTP/1.1
 Host: localhost:10000
@@ -75,6 +76,7 @@ Accept: application/json
 ```
 
 An answer like
+<sub>HTTP Response </sub>
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
