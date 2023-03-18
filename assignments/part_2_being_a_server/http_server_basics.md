@@ -107,3 +107,17 @@ Content-Type: text/plain
 
 Hello
 ```
+
+## 🧱 Part 2.4 Posting data
+To post data you can use curl and send a file. We should tell the server what the content we are sending is. 
+
+```
+curl -X POST -H "Content-Type: application/json" -d @example.json http://localhost:10000/foobar
+```
+ 
+You can answer anything that is valid HTTP, but the following should be sufficient. We don't have to send any content back.
+```
+HTTP/1.1 201 CREATED 
+```
+
+Notice how the sending and recieving the JSON file is not very different from anything else we have been doing. 
