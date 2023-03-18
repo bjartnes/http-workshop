@@ -17,7 +17,7 @@ As a server, start listening!
 ```
 nc -l localhost 8080 -q 0
 ```
-(You do not HAVE to use ```-q 0```, but it makes it more elegant to hang-up when done.)
+(You do not HAVE to use ```-q 0```, but it makes it more elegant to hang-up when done. This allows us to hang up by sending EOF, end-of-file, instead of killing the process. This is explained later)
 
 Open a new terminal (try splitting the terminal, as explained earlier) and use cURL to send a HTTP request
 ```
@@ -39,9 +39,12 @@ Content-Type: text/plain
 
 HEI!!!
 ```
-The extra line, a double lineshift, signifies the end of the HTTP headers and the beginning of the content. The client claims to accept anything (*/*) so we give it text/plain.
 
-To end the message, for now we have to hang up the TCP connection. Use <kbd>CTRL</kdb>+<kbd>D</kdb>, or if you did not use ```-q 0``` the more brutal <kbd>CTRL</kdb>+<kbd>C</kdb>.
+The extra line, a double newline with no space in between, signifies the end of the HTTP headers and the beginning of the content. The [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) are in the format of headername:headervalue, and the content is
+whatever we say in the Content-Type header.
+
+The client claims to accept anything (*/*) so we give it text/plain.
+To end the message, for now we have to hang up the TCP connection. Use <kbd>CTRL</kdb>+<kbd>D</kdb> to send EOF (end-of-file), or if you did not use ```-q 0``` the more brutal <kbd>CTRL</kdb>+<kbd>C</kdb> will kill the process and terminate the TCP/IP connection. 
 
 ## 🧱 Part 2.2 A modern JSON API
 
