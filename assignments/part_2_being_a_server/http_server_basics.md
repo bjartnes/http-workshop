@@ -122,3 +122,27 @@ HTTP/1.1 201 CREATED
 ```
 
 Notice how the sending and recieving the JSON file is not very different from anything else we have been doing. 
+
+## 🧱 Part 2.5 Talking to python 
+
+Start netcat on some port, for example
+```
+nc -l localhost 6666 -q 0
+```
+
+Start python with ```python3```.
+Load the requests library and do a HTTP request to the port where you listen with netcat.
+```
+import requests
+import requests
+response = requests.get("http://localhost:6666/fooobar")
+```
+...and answer with some reply and hang up using <kbd>CTRL</kbd>+<kbd>D</kbd>.
+
+Then print the response object from Python
+```
+response.status_code
+response.text
+```
+
+![Python example](https://user-images.githubusercontent.com/88324093/226142823-81a81d89-ec9e-47aa-8799-38d5e5c4abef.png)
