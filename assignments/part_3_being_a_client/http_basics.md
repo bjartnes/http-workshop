@@ -55,7 +55,7 @@ To get both line endings and TLS to work, for example to talk to https://info.ce
 Talk to some of your favorite websites. Try to look up their IP, connect to them and ask for their homepage.
 
 
-## 3.5 Talk to your own python webserver
+## 💡 3.5 Talk to your own python webserver
 
 Start the webserver
 ```
@@ -74,7 +74,16 @@ GET / HTTP/1.1
 ```
 Close the connection with <kbd>CTRL</kbd> + <kbd>D</kbd>.
 
-## 3.6 🎓 TCP Dump
+
+## 💡 3.6 Talk to your own dotnet webserver
+
+Start the server at 
+```
+dotnet run --project .\dotnetserver\dotnetserver.csproj
+```
+and then talk to it, simliar to above, just using port 3000.
+
+## 3.7 🎓 TCP Dump
 
 Using tcpdump to monitor what was going on in the previous challenges. (Or Wireshark, if you have it) 
 ```
