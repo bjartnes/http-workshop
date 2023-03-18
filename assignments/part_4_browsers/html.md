@@ -27,8 +27,14 @@ Content-Type: text/html
 <img src="http://placekitten.com/500/500" />
 </html>
 ```
+###  4.2 🧱 Redirecting with HTTP 
+Try to talk to the browser, and then send a HTTP redirect response.
+```
+HTTP/1.1 302 FOUND 
+Location: https://ndcoslo.com/ 
+```
 
-### 4.2 💡 Redirecting with javascript
+### 4.3 💡 Redirecting with javascript
 Instead of redirecting with 302s like earlier, try to redirect with javascript 
 
 <details>
@@ -54,12 +60,12 @@ window.location = "https://www.vg.no";
 ```
 </details>
 
-### 4.3 💡 Server-sent events
+### 4.4 💡 Server-sent events
 Pushing cats and dogs as images over SSE.
 
-### 4.4 🎓 CORS
+### 4.5 🎓 CORS
 How CORS work - by hand.
 
 
-### 4.5 🎓 401 and 403s
+### 4.6 🎓 401 and 403s
 Maybe do some hand-rolled security
