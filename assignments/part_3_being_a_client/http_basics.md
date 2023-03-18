@@ -61,6 +61,18 @@ Start the webserver
 ```
 flask run
 ```
+and it should pick up the server code defined in app.py in the root folder in this repository and serve it at port 5000.
+
+To talk to the server, open a new terminal and type
+```
+nc localhost 5000 -q 0
+```
+
+Then type the following request into netcat.
+```
+GET / HTTP/1.1
+```
+Close the connection with <kbd>CTRL</kbd> + <kbd>D</kbd>.
 
 ## 3.6 🎓 TCP Dump
 
