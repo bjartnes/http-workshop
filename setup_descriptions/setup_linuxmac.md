@@ -28,3 +28,13 @@ echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.i
 sudo apt-get update \
     && apt-get -y install --no-install-recommends k6
 ```
+## Installing python and flask/requests (optional)
+
+```
+apt get install python3 python3-pip
+pip3 install flask requests
+```
+
+## Install dotnet (optional)
+
+https://dotnet.microsoft.com/en-us/download
