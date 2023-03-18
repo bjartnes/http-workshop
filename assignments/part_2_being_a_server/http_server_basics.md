@@ -122,7 +122,7 @@ HTTP/1.1 201 CREATED
 
 Notice how the sending and recieving the JSON file is not very different from anything else we have been doing. 
 
-## 🧱 Part 2.5 Talking to python 
+## 💡 Part 2.5 Talking to python 
 
 Start netcat on some port, for example
 ```
@@ -145,3 +145,23 @@ response.text
 ```
 
 ![Python example](https://user-images.githubusercontent.com/88324093/226142823-81a81d89-ec9e-47aa-8799-38d5e5c4abef.png)
+
+## 💡 Part 2.6 Talking to .NET
+
+Start the server and listen to port 6666.
+```
+nc -l localhost 6666 -q 0
+```
+
+Start the .NET client and have it do a request, you can read and play with the code in the /dotnetclient project.
+```
+dotnet run --project .\dotnetclient\dotnetclient.csproj
+```
+
+Reply with something like
+```
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+HEISANN .NET
+```

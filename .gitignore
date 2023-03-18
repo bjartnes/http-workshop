@@ -1,2 +1,2 @@
-dotnetserver/obj/*
-dotnetserver/bin/*
+**/obj/*
+**/bin/*
