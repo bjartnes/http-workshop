@@ -20,23 +20,19 @@ layers it can be easier to understand if we use tools that only handles specific
 
 Wireshark can also be fun to install to monitor traffic, but it is not required.
 
-1. ⛈️ Cloud-based: Setup on codespace (Easy/cloudbased)
+1. ⛈️ [Cloud-based: Setup on codespace (Easy/cloudbased)](setup_descriptions/setup_codespace.md):
 This is the simplest way, everything runs in the browser, but it requires a GitHub Teams account or similar that
 have codespaces available.
-See documentation [here](setup_descriptions/setup_codespace.md)
 
-2. 🐋 Devcontainer on local machine: This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all the tools required automatically once that is setup. Docker Desktop should be possible to run as a personal user under the education and open-source clause, as this is an open-source project for education https://www.docker.com/pricing/. 
-See documentation [here](setup_descriptions/setup_devcontainer.md)
+2. 🐋 [Devcontainer on local machine](setup_descriptions/setup_devcontainer.md): This works on Mac/Linux/Windows. It does require docker and VS Code to be installed, but installs all the tools required automatically once that is setup. Docker Desktop should be possible to run as a personal user under the education and open-source clause, as this is an open-source project for education https://www.docker.com/pricing/. 
 
-3. 🪟 Windows: Setup on WSL2
+3. 🪟 [Windows: Setup on WSL2](setup_descriptions/setup_wsl.md)
 On Windows, running Linux is easy to do using WSL2.
-See documentation [here](setup_descriptions/setup_wsl.md)
 
-4. 🍎/🐧:Mac or Linux: Local setup
+
+4. 🍎/🐧 [Mac or Linux: Local setup](setup_descriptions/setup_linuxmac.md)
 This requires a mac or linux installation, as these tools really does not work properly on Windows.
 Descriptions are for Ubuntu, so you might have to figure out how to do it on your distro...
-See documentation [here](setup_descriptions/setup_linuxmac.md)
-
 
 # Assignments
 The order is the intended workshop order, but feel free to skip to whatever you find most interesting. 
