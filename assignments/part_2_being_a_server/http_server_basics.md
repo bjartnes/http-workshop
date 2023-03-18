@@ -98,6 +98,7 @@ If you are working inside a GitHub Codespace, the simplest thing is to use a ter
 ```
 carbonyl http://localhost:10000 --no-sandbox
 ```
+If you are working locally on your own machine from the terminal
 
 
 Answer something along the lines ofg
