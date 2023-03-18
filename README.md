@@ -49,9 +49,9 @@ I use some emojies to indicate if things can be skipped or not.
 This part covers the basics of HTTP. It should be possible to do with a basic knowledge of web development. 
 
 - [Part 1 TCP/IP Basics](assignments/part_1_tcpip/tcp.md)
-- [Part 2 HTTP Basics](assignments/part_2_being_a_server/http_server_basics.md)
-- [Part 3 Responses](assignments/part_3_being_a_client/http_basics.md)
-- [Part 4 Browsers](assignments/part_4_browsers/html.md)
+- [Part 2 HTTP Basics - Being a server](assignments/part_2_being_a_server/http_server_basics.md)
+- [Part 3 HTTP Basics - Being a client](assignments/part_3_being_a_client/http_basics.md)
+- [Part 4 HTTP and HTML - Talking to browsers](assignments/part_4_browsers/html.md)
 
 ### Proxies and hypermedia 
 

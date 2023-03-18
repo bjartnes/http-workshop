@@ -22,6 +22,7 @@ nc -l localhost 8080
 ```
 
 Let that run, and open another terminal to connect to that port (the ephermal port is picked for us automatically):
+
 ```
 nc localhost 8080 
 ```

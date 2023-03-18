@@ -1,5 +1,4 @@
-# Part 2 - Server basics
-HTTP is built for client-server architectures and thus consists of two parts - the client and the server. Let's start with being a server, and use cURL as a client.
+# Part 2 - Server basics HTTP is built for client-server architectures and thus consists of two parts - the client and the server. Let's start with being a server, and use cURL as a client.
 
 ## 🧱 Part 2.1 Talking to cURL
 
@@ -31,7 +30,6 @@ Host: localhost:10000
 User-Agent: curl/7.81.0
 Accept: */*
 ```
-
 Answer 
 ```
 HTTP/1.1 200 OK
@@ -44,7 +42,7 @@ The extra line, a double newline with no space in between, signifies the end of 
 whatever we say in the Content-Type header.
 
 The client claims to accept anything (*/*) so we give it text/plain.
-To end the message, for now we have to hang up the TCP connection. Use <kbd>CTRL</kdb>+<kbd>D</kdb> to send EOF (end-of-file), or if you did not use ```-q 0``` the more brutal <kbd>CTRL</kdb>+<kbd>C</kdb> will kill the process and terminate the TCP/IP connection. 
+To end the message, for now we have to hang up the TCP connection. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to send EOF (end-of-file).  If you did not use ```-q 0``` the more brutal <kbd>Ctrl</kbd>+<kbd>C</kbd> will kill the process and terminate the TCP/IP connection.
 
 ## 🧱 Part 2.2 A modern JSON API
 
@@ -56,6 +54,7 @@ curl http://localhost:8080/foo -H 'Accept: application/json' | jq
 ```
 
 The result should look something like:
+
 ```
 GET /foo HTTP/1.1
 Host: localhost:10000
