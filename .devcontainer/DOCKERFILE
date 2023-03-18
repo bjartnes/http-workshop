@@ -11,3 +11,4 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends k6
 
 RUN npm install --global carbonyl
+RUN PS1=">"
