@@ -15,6 +15,9 @@ My NDC 2023 workshop https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-b
 There are a varieties of tools we can use for this workshop, some tools will be considers "must-haves", some are fun to try and optional.
 They can be run either in GitHub codespace, as dev containers locally on your laptop or by installing the tools on your linux machine, if you have a Mac it might work, on Windows the only reasonable option is to use WSL2 or a devcontainer. All these options will be decsribed in detail.
 
+Tools such as netcat, curl and jq might look harder than using a graphical tool such as Postman. However, these tools are in many ways simpler as they typically try [to do only one thing and to that thing well](https://en.wikipedia.org/wiki/Unix_philosophy). In order to understand the different
+layers it can be easier to understand if we use tools that only handles specific parts of the process. They can be quite awkward to use, so the explanations does strive to explain how to use them correctly.
+
 Wireshark can also be fun to install to monitor traffic, but it is not required.
 
 1. ⛈️ Cloud-based: Setup on codespace (Easy/cloudbased)
