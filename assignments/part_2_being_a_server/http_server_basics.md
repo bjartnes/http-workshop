@@ -18,6 +18,9 @@ nc -l localhost 8080 -q 0
 (You do not HAVE to use ```-q 0```, but it makes it more elegant to hang-up when done. This allows us to hang up by sending EOF, end-of-file, instead of killing the process. This is explained later)
 
 Open a new terminal (try splitting the terminal, as explained earlier) and use cURL to send a HTTP request
+Another little trick is to set the terminal prompt to server on one terminal and client on the other, too try to separate them. I like to keep clients on the left and the server on the right as well. Just type ```PS1="Server >"``` and ```PS1="Client >"``` in
+the terminal. 
+
 ```
 curl http://localhost:8080/foo 
 ```
@@ -49,6 +52,9 @@ The client claims to accept anything ```(*/*)``` so we give it ```text/plain```.
 To end the message, for now we have to hang up the TCP connection. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to send EOF (end-of-file).  If you did not use ```-q 0``` the more brutal <kbd>Ctrl</kbd>+<kbd>C</kbd> will kill the process and terminate the TCP/IP connection.
 📝 THe correct way to signifiy the end of the message to the client is to provide the length of the content you are sending in the HTTP header as ```Content-Length```. We will come back to that, but this is quicker than counting characters and it works in many cases so we will use this
 from time to time.
+
+It will look something like this
+![Image that explains where to type what](https://user-images.githubusercontent.com/88324093/226139174-37b35ae3-12bc-4a33-9e2d-c0eda8404d3e.png)
 
 ## 🧱 Part 2.2 A modern JSON API
 
