@@ -1,4 +1,3 @@
-# Part 2 - Server basics HTTP is built for client-server architectures and thus consists of two parts - the client and the server. Let's start with being a server, and use cURL as a client.
 
 ## 🧱 Part 2.1 Talking to cURL
 
@@ -24,13 +23,18 @@ curl http://localhost:8080/foo
 ```
 
 You should see something like 
+
+<sub>HTTP Request</sub>
 ```
 GET /foobar HTTP/1.1
 Host: localhost:10000
 User-Agent: curl/7.81.0
 Accept: */*
 ```
-Answer 
+
+Type the following HTTP Response in the window where you are running nc to answer the client. 
+
+<sub>HTTP Response</sub>
 ```
 HTTP/1.1 200 OK
 Content-Type: text/plain
@@ -41,8 +45,10 @@ HEI!!!
 The extra line, a double newline with no space in between, signifies the end of the HTTP headers and the beginning of the content. The [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) are in the format of headername:headervalue, and the content is
 whatever we say in the Content-Type header.
 
-The client claims to accept anything (*/*) so we give it text/plain.
+The client claims to accept anything ```(*/*)``` so we give it ```text/plain```.
 To end the message, for now we have to hang up the TCP connection. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to send EOF (end-of-file).  If you did not use ```-q 0``` the more brutal <kbd>Ctrl</kbd>+<kbd>C</kbd> will kill the process and terminate the TCP/IP connection.
+📝 THe correct way to signifiy the end of the message to the client is to provide the length of the content you are sending in the HTTP header as ```Content-Length```. We will come back to that, but this is quicker than counting characters and it works in many cases so we will use this
+from time to time.
 
 ## 🧱 Part 2.2 A modern JSON API
 
