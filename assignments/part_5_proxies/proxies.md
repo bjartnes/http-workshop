@@ -1,5 +1,6 @@
 # Part 5 - Talking through proxies
 This is where we introduce HTTP proxies, such as nginx. 
+This is harder and requires us to be more correct, cheating such as skipping content-length as we did before, will often not work through proxies and we have to do proper content-length or chunked encoding.
 
 ![Proxy](proxy.drawio.png)
 
@@ -67,3 +68,6 @@ Let's see what the cache can do for us.
 
 ## 🎓 5.4 Port forwarding from GitHub codespaces
 GitHub Codespace (if you set the workshop up using GitHub codespaces) can forward traffic on HTTP, change the proxy to HTTP and listen on a port. Similar to nginx (it might be nginx...), we have to set content length for it to work properly without doing chunked encoding.
+
+## 🎓 5.5 Chunked encoding
+TBD
