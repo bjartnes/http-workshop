@@ -54,7 +54,15 @@ To get both line endings and TLS to work, for example to talk to https://info.ce
 ## 3.4 Talk to website
 Talk to some of your favorite websites. Try to look up their IP, connect to them and ask for their homepage.
 
-## 3.5 🎓 TCP Dump
+
+## 3.5 Talk to your own python webserver
+
+Start the webserver
+```
+flask run
+```
+
+## 3.6 🎓 TCP Dump
 
 Using tcpdump to monitor what was going on in the previous challenges. (Or Wireshark, if you have it) 
 ```
