@@ -2,6 +2,32 @@
 Might be some server-sent events etc in here too...
 ###  4.1 🧱 Rendering HTML to a browser
 
+For example, try to start netcat, as before, and point a browser to the adress you are listening at.
+
+<details>
+    <summary>If you do not remember how...</summary>
+
+Listen to a port, for example 10000, by ```nc -l localhost 10000 -q 0``` and then point
+a browser to http://localhost:10000
+
+If you are working inside a GitHub Codespace, the simplest thing is to use a terminal browser. Carbonyl is already installed, and can load a web browser by:
+```
+carbonyl http://localhost:10000 --no-sandbox
+```
+
+</details>
+
+Answer with something like the following
+```
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+<html>
+<h1> Hello </h1>
+<img src="http://placekitten.com/500/500" />
+</html>
+```
+
 ### 4.2 💡 Redirecting with javascript
 Instead of redirecting with 302s like earlier, try to redirect with javascript 
 
