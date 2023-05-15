@@ -101,7 +101,12 @@ data: http://place-puppy.com/202x202
 
 ### 4.5 🎓 CORS
 How CORS work - by hand.
-    
+Open two servers, for example
+```sh 
+nc -l localhost 4444 -q 0
+nc -l localhost 8888 -q 0
+``` 
+
 ``` 
 <script>
 fetch('http://localhost:8888/foo').then(response => response.text()).then(data => console.log(data));
