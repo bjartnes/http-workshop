@@ -101,7 +101,17 @@ data: http://place-puppy.com/202x202
 
 ### 4.5 🎓 CORS
 How CORS work - by hand.
-
+    
+``` 
+<script>
+fetch('http://localhost:8888/foo').then(response => response.text()).then(data => console.log(data));
+</script>
+``` 
+Try with and without
+    
+``` 
+Access-Control-Allow-Origin: http://localhost:4444
+``` 
 
 ### 4.6 🎓 401 and 403s
 Maybe do some hand-rolled security
