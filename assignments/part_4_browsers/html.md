@@ -52,16 +52,52 @@ window.location = URL
 HTTP/1.1 200 OK
 Content-Type: text/html
     
-<HTML> 
-<BODY>
-<SCRIPT>
+<html> 
+<body>
+<script>
 window.location = "https://www.vg.no";
-</SCRIPT>    
+</script>    
 ```
 </details>
 
 ### 4.4 💡 Server-sent events
 Pushing cats and dogs as images over SSE.
+Server-sent events allows the server to push data to connected clients. It is a much simpler protocol than websockets, and only one-way (from the server, to the clients).
+
+https://twitter.com/bjartnes/status/1480223053128867851
+<details>
+    <summary>Solution</summary>
+  
+```
+HTTP/1.1 200 OK
+Content-Type: text/html
+    
+<html> 
+<body>
+<img />
+<script>
+const img = document.querySelect("img");
+const eventSource = new EventSource("images");
+eventSource.onmessage = function(event) {
+        img.src = event.data;
+    }
+</script>    
+</html>   
+```
+Close the connection and listen again for the request for the eventstream
+ 
+```
+HTTP/1.1 200 OK
+Content-Type: text/eventstream
+    
+data: http://place-puppy.com/200x200
+    
+data: http://place-puppy.com/202x202
+
+data: http://place-puppy.com/202x202    
+``` 
+</details>  
+
 
 ### 4.5 🎓 CORS
 How CORS work - by hand.
