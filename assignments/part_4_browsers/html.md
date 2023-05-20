@@ -119,7 +119,10 @@ Access-Control-Allow-Origin: http://localhost:4444
 ``` 
 
 ### 4.6 🎓 401 and 403s
+In chapter 6 there is a proper OAuth example, for now we can play with basic authentication just to learn a little bit about 401 and 403.
+    
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate#basic_authentication
+https://www.rfc-editor.org/rfc/rfc7617
     
 ```
 HTTP/1.1 401 Unauthorized
