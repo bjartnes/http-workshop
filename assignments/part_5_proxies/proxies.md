@@ -87,9 +87,20 @@ echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.i
 apt-get update
 apt-get install k6
 ```
+It can be a bit fiddly, I typically troubleshoot the response with something like ```curl http://localhost/foobar50 -v```, the versbose flag gives some feedback if there are too few or too many characters etc in the response. The newline is typically ```\r``` and one character, if you use the ```-C``` with netcat, as in ```nc -l 127.0.0.1 10000 -q 0 -C``` you get ```\r\n``` and therefore have to count two characters, so HEI and the newline is 5 characters. If you do not type the newline after HEI, but just send using <kbd>CTRL</kbd>+<kbd>D</kbd> before hitting enter, then it works with Content-Length of 3. 
+```
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 4
+Cache-Control: public, max-age=3000
+
+HEI
+```
 
 ## 🎓 5.4 Port forwarding from GitHub codespaces
 GitHub Codespace (if you set the workshop up using GitHub codespaces) can forward traffic on HTTP, change the proxy to HTTP and listen on a port. Similar to nginx (it might be nginx...), we have to set content length for it to work properly without doing chunked encoding.
+This is not very interesting, so left as an exercise to the reader.
 
 ## 🎓 5.5 Chunked encoding
-TBD
+Instead of sending the Content-Length, we can use chunked encoding. It is really fiddly by hand, but it works...
+https://en.wikipedia.org/wiki/Chunked_transfer_encoding
