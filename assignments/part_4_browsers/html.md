@@ -128,8 +128,12 @@ https://www.rfc-editor.org/rfc/rfc7617
 HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Basic realm="insert realm"
 ```
+ 
+If typed correctly, the user should see a prompt where they can fill out username and password. Remember to listen for the connection again before sending the username and password.
+![image](https://github.com/bjartnes/http-workshop/assets/88324093/5a98bf45-483f-4924-a33c-65fd3e20de2e)
 
-Depending on the password being correct and if you think the user should have access (you need to base64 decode the password) you can give the user
+
+Depending on the password being correct and if you think the user should have access (you need to base64 decode the password to see the username:password) you can give the user
 200, 401 again or 
 ```
 HTTP/1.1 403 Forbidden
