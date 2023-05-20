@@ -76,7 +76,15 @@ server {
 
 
 ## 🎓 5.3 Load testing
-Let's see what the cache can do for us.
+Let's see what the cache can do for us. I took k6 out of the devcontainer setup as it was sometimes a bit  unstable, you can install it as 
+in https://k6.io/docs/get-started/installation/ but without the sudo (as we are running as rool in the devcontainer). 
+```
+gpg -k
+gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
+echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" |  tee /etc/apt/sources.list.d/k6.list
+apt-get update
+apt-get install k6
+```
 
 ## 🎓 5.4 Port forwarding from GitHub codespaces
 GitHub Codespace (if you set the workshop up using GitHub codespaces) can forward traffic on HTTP, change the proxy to HTTP and listen on a port. Similar to nginx (it might be nginx...), we have to set content length for it to work properly without doing chunked encoding.
