@@ -54,6 +54,7 @@ Content-Length: 3
 HEI
 ```
 Try to call this endpoint multiple times. You can do it by hand, but ```curl http://localhost/``` is a litte bit faster.
+You can play around with different headers, such as must-revalidate.
 
 ### Entire nginx config for cache setup 
 Deleted all the comments.
