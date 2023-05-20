@@ -2,6 +2,8 @@
 This is where we introduce HTTP proxies, such as nginx. 
 This is harder and requires us to be more correct, cheating such as skipping content-length as we did before, will often not work through proxies and we have to do proper content-length or chunked encoding.
 
+If you are not using the codespaces, you have to install nginx on your system. Some files might be in different directories etc, but the overall changes should work the same...
+
 ![Proxy](proxy.drawio.png)
 
 ![Nginx](nginx_setup.drawio.png)
