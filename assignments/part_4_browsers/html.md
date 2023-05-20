@@ -119,4 +119,15 @@ Access-Control-Allow-Origin: http://localhost:4444
 ``` 
 
 ### 4.6 🎓 401 and 403s
-Maybe do some hand-rolled security
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate#basic_authentication
+    
+```
+HTTP/1.1 401 Unauthorized
+WWW-Authenticate: Basic realm="insert realm"
+```
+
+Depending on the password being correct and if you think the user should have access (you need to base64 decode the password) you can give the user
+200, 401 again or 
+```
+HTTP/1.1 403 Forbidden
+```
