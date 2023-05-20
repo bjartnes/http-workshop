@@ -48,7 +48,7 @@ This part covers the basics of HTTP. It should be possible to do with a basic kn
 - [Part 2 HTTP Basics - Being a server](assignments/part_2_being_a_server/http_server_basics.md)
 - [Part 3 HTTP Basics - Being a client](assignments/part_3_being_a_client/http_basics.md)
 
-### Part 2 - Browsers (Not completed)
+### Part 2 - Browsers
 Browsers are the best HTTP client and the most fun to talk to.
 
 - [Part 4 HTTP and HTML - Talking to browsers](assignments/part_4_browsers/html.md)
