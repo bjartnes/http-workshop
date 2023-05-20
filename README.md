@@ -53,7 +53,7 @@ Browsers are the best HTTP client and the most fun to talk to.
 
 - [Part 4 HTTP and HTML - Talking to browsers](assignments/part_4_browsers/html.md)
 
-### Part 3 - Proxies and more hypermedia (Not completed)
+### Part 3 - Proxies and more hypermedia 
 
 This part covers HTTP proxies (reverse-proxies) and goes into details of configuring nginx, running load tests on HTTP and
 some more advanced hypermedia applications and is likely going to be difficult to do without having worked
@@ -61,7 +61,7 @@ with programming web applications.
 We can also look 
 
 - [Part 5 Proxies](assignments/part_5_proxies/proxies.md)
-- [Part 6 Hypermedia](assignments/part_6_hypermedia/hypermedia.md)
+- [Part 6 Hypermedia](assignments/part_6_hypermedia/hypermedia.md) (Not completed)
 
 
 # Background material
