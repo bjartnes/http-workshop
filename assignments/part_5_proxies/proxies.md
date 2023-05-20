@@ -15,6 +15,7 @@ Nginx requires you to do things a litte bit more properly to help the proxying, 
 will use that for now. It might involve some character counting upfront...
 
 To open the files, as they are outside the workspace area, use open file (<kbd>CTRL</kbd> + <kbd>O</kbd>).
+Try with and without ```proxy_http_version 1.1;``` to see how the HTTP version differs.
 
 ![image](https://github.com/bjartnes/http-workshop/assets/88324093/d5c54ebc-8499-4e32-a008-b4b6dd5330ce)
 
@@ -68,6 +69,7 @@ server {
 	server_name _;
 
 	location / {
+		proxy_http_version 1.1;
 		proxy_cache my_cache; 
 		proxy_pass http://127.0.0.1:10000;
 	}
