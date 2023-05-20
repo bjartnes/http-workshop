@@ -14,6 +14,10 @@ This first task is to talk thorugh nginx as a proxy. Netcat will listen on port 
 Nginx requires you to do things a litte bit more properly to help the proxying, so either by using chunked encoding or stating the length of the body as content length. The latter is simpler, so we 
 will use that for now. It might involve some character counting upfront...
 
+To open the files, as they are outside the workspace area, use open file (<kbd>CTRL</kbd> + <kbd>O</kbd>).
+
+![image](https://github.com/bjartnes/http-workshop/assets/88324093/d5c54ebc-8499-4e32-a008-b4b6dd5330ce)
+
 ![image](https://user-images.githubusercontent.com/88324093/220855629-50b7663c-1309-41c7-8ce8-296d19915dc6.png)
 
 ![image](https://user-images.githubusercontent.com/88324093/220857750-bf03fa6b-b16d-48b6-919b-f9ec772a48fc.png)
