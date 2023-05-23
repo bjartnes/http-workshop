@@ -65,6 +65,9 @@ On localhost, it is easiest to use ```-i lo``` to listen to the loopback interfa
 ```
 sudo tcpdump -i lo port 8080 -v
 ```
-
+The codespace is running as root for simplicity (or lazyness on my part), so just skip sudo there.
+```
+tcpdump -i lo port 8080 -v
+```
 You can observe the packages, the three way handshake etc. We will come back to using it later as we talk HTTP.
 
