@@ -50,7 +50,8 @@ whatever we say in the Content-Type header.
 
 The client claims to accept anything ```(*/*)``` so we give it ```text/plain```.
 To end the message, for now we have to hang up the TCP connection. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to send EOF (end-of-file).  If you did not use ```-q 0``` the more brutal <kbd>Ctrl</kbd>+<kbd>C</kbd> will kill the process and terminate the TCP/IP connection.
-📝 THe correct way to signifiy the end of the message to the client is to provide the length of the content you are sending in the HTTP header as ```Content-Length```. We will come back to that in part II, when we use proxies. Cheating like this is quicker and simpler than counting characters and it works in many cases so we will use this for now to make life a bit easier.
+
+📝 The correct way to signifiy the end of the message to the client is to provide the length of the content you are sending in the HTTP header as ```Content-Length```. We will come back to that in part II, when we use proxies. Cheating like this is quicker and simpler than counting characters and it works in many cases so we will use this for now to make life a bit easier.
 
 It will look something like this
 ![Image that explains where to type what](https://user-images.githubusercontent.com/88324093/226139174-37b35ae3-12bc-4a33-9e2d-c0eda8404d3e.png)
