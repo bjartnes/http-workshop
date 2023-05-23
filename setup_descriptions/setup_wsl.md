@@ -18,3 +18,9 @@ echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.i
 sudo apt-get update \
     && apt-get -y install --no-install-recommends k6
 ```
+
+
+## Splitting panes
+In Windows Terminal it is easy to spin up multiple tabs in same window, makes things a bit more organized.
+
+![image](https://github.com/bjartnes/http-workshop/assets/88324093/b8aae90d-0276-49ad-93ea-b75473300861)
