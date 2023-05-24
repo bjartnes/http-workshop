@@ -18,8 +18,14 @@ nc -l localhost 8080 -q 0
 (You do not HAVE to use ```-q 0```, but it makes it more elegant to hang-up when done. This allows us to hang up by sending EOF, end-of-file, instead of killing the process. This is explained later)
 
 Open a new terminal (try splitting the terminal, as explained earlier) and use cURL to send a HTTP request
-Another little trick is to set the terminal prompt to server on one terminal and client on the other, too try to separate them. I like to keep clients on the left and the server on the right as well. Just type ```PS1="Server >"``` and ```PS1="Client >"``` in
-the terminal. 
+Another little trick is to set the terminal prompt to server on one terminal and client on the other, too try to separate them. I like to keep clients on the left and the server on the right as well. Just type ```PS1="Server> "``` and ```PS1="Client>"``` in the terminal. 
+
+<details>
+    <summary> (Optional) Add colors to your prompt</summary> 
+    
+type ```PS1="\[\033[0;33m\]Server> \[\033[0m\]"```    
+type ```PS1="\[\033[0;32m\]Client> \[\033[0m\]"```
+</details>
 
 ```
 curl http://localhost:8080/foo 
