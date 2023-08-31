@@ -1,7 +1,7 @@
 # http-workshop
 ## Intro/abstract
 
-My NDC 2023 workshop https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-by-hand-0jfs/0xeiawe0qsu
+My [NDC 2023](https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-by-hand-0jfs/0xeiawe0qsu) and [CPH Devfest](https://cphdevfest.com/agenda/part-12-artisanal-http-or-http-by-hand-0jfs/6ca52b227ba7) workshop.
 
 > In this workshop, we will dig into HTTP 1.1 - the Hypertext Transfer Protocol - from the ground up. We will iterate on the problem of communication between computers, 
 > starting by typing text in a terminal on one computer and sending it over TCP/IP to another computer. We will gradually build on this, and before you know it, we are 
