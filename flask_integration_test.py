@@ -9,8 +9,6 @@ def start_flask_app():
     server_thread = threading.Thread(target=app.run, kwargs={'host': 'localhost', 'port': 5010})
     server_thread.start()
     time.sleep(1)
-    yield
-    server_thread.join()
 
 def test_short_delays():
     response = requests.get('http://localhost:5010/hang/0.01')
