@@ -1,3 +1,6 @@
+# This does not allow us to REALLY test what
+# happens on the network and using the python request library
+# for that we have to run the server properly
 import pytest
 import app
 
