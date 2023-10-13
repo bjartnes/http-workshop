@@ -18,8 +18,7 @@ def generate_crash():
 @app.route("/hang")
 def generate_hang():
     for i in range(10):
-        yield f"{i}, {i*i}\n"
         if i > 4:
-            time.sleep(15)
-            yield f"{i}, {i*i}\n"
+            time.sleep(3)
+        yield f"{i}, {i*i}\n"
     return generate_hang()
