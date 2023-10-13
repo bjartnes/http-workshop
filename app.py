@@ -15,10 +15,10 @@ def generate_crash():
             raise OverflowError()
     return generate_crash()
 
-@app.route("/hang")
-def generate_hang():
+@app.route("/hang/<delay>")
+def generate_hang(delay):
     for i in range(10):
         if i > 4:
-            time.sleep(3)
+            time.sleep(float(delay))
         yield f"{i}, {i*i}\n"
-    return generate_hang()
+    return generate_hang(delay)
