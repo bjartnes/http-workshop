@@ -19,5 +19,5 @@ def retry_session(retries, session=None, backoff_factor=3, backoff_max=3):
 retry3 = retry_session(3)
 
 #response = retry3.get("http://localhost:3000/timeout", timeout=10)
-response = retry3.get("http://localhost:5000/failafterawhile", timeout=10)
+response = retry3.get("http://localhost:5000/hang", timeout=10)
 print(response)

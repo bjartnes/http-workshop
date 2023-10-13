@@ -1,3 +1,4 @@
+import time
 from flask import Flask
 
 app = Flask(__name__)
@@ -6,10 +7,19 @@ app = Flask(__name__)
 def hello():
     return "Hello, World!"
 
-@app.route("/failafterawhile")
-def generate():
+@app.route("/fail")
+def generate_crash():
     for i in range(10):
         yield f"{i}, {i*i}\n"
         if i > 8:
             raise OverflowError()
-    return generate()
+    return generate_crash()
+
+@app.route("/hang")
+def generate_hang():
+    for i in range(10):
+        yield f"{i}, {i*i}\n"
+        if i > 4:
+            time.sleep(15)
+            yield f"{i}, {i*i}\n"
+    return generate_hang()
