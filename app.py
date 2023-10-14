@@ -1,8 +1,9 @@
 import time
-from flask import Flask
+from flask import Flask, g
 
 app = Flask(__name__)
 
+app._count = 1
 @app.route("/")
 def hello():
     return "Hello, World!"
@@ -14,7 +15,6 @@ def generate_crash():
         if i > 8:
             raise OverflowError()
     return generate_crash()
-
 @app.route("/hang/<delay>")
 def generate_hang(delay):
     for i in range(10):
