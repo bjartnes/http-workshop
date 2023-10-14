@@ -39,7 +39,7 @@ def test_short_delays():
 
 pytest.__retry_delay = 0.25
 @retry(tries=4)
-def retry_my_function():
+def retry_get_with_delay():
     pytest.__retry_delay = pytest.__retry_delay - 0.05
     return get_with_delay(pytest.__retry_delay) 
 
@@ -50,6 +50,10 @@ def test_longer_delays():
     with pytest.raises(requests.exceptions.ConnectionError):
         response = retry_session(3).get('http://localhost:5010/hang/0.2', timeout=0.1)
 
+def test_retry_quits_with_connection_errors_with_trillion_retries():
+    with pytest.raises(requests.exceptions.ConnectionError):
+        response = retry_session(1000000000000).get('http://localhost:5010/hang/0.2', timeout=0.1)
+
 def test_longer_delays_with_retry():
-    response = retry_my_function() 
+    response = retry_get_with_delay() 
     assert "9, 81" in response.text
