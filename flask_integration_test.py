@@ -12,7 +12,7 @@ def start_flask_app():
                                     stdout=subprocess.DEVNULL,
                                     shell=True,
                                     preexec_fn=os.setsid)
-    time.sleep(1)
+    time.sleep(0.7)
     yield
     flask_process.kill()
 
@@ -21,8 +21,8 @@ def test_short_delays():
     assert response.status_code == 200
     assert "9, 81" in response.text
 
-pytest.__retry_delay = 0.3
-@retry(tries=3)
+pytest.__retry_delay = 0.4
+@retry(tries=6)
 def retry_my_function():
     pytest.__retry_delay = pytest.__retry_delay - 0.1
     return get_with_delay(pytest.__retry_delay) 
