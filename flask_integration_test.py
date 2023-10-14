@@ -1,12 +1,11 @@
 import subprocess
-import threading
 import time
 import requests
 import pytest
 from retry import retry
 from app import app
 import os
-#@pytest.fixture(scope='module', autouse=True)
+
 @pytest.fixture(scope='module', autouse=True)
 def start_flask_app():
     flask_process= subprocess.Popen(["export FLASK_ENV=development && flask run --host=0.0.0.0 --port=5010"],
@@ -22,15 +21,19 @@ def test_short_delays():
     assert response.status_code == 200
     assert "9, 81" in response.text
 
-#@retry(ConnectionError, tries=3,delay=1, jitter=1)
-@retry(Exception, tries=6)
-def foo():
-    return requests.get('http://localhost:5010/hang/0.3', timeout=0.2)
+pytest.__retry_delay = 0.3
+@retry(tries=3)
+def retry_my_function():
+    pytest.__retry_delay = pytest.__retry_delay - 0.1
+    return get_with_delay(pytest.__retry_delay) 
+
+def get_with_delay(delay):
+    return requests.get('http://localhost:5010/hang/' + str(delay), timeout=0.1)
 
 def test_longer_delays():
     with pytest.raises(requests.exceptions.ConnectionError):
-        response = requests.get('http://localhost:5010/hang/0.3', timeout=0.2)
+        response = requests.get('http://localhost:5010/hang/0.2', timeout=0.1)
 
 def test_longer_delays_with_retry():
-    response = foo()
+    response = retry_my_function() 
     assert "9, 81" in response.text

@@ -15,6 +15,7 @@ def generate_crash():
         if i > 8:
             raise OverflowError()
     return generate_crash()
+
 @app.route("/hang/<delay>")
 def generate_hang(delay):
     for i in range(10):
