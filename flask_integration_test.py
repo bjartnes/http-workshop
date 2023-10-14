@@ -21,14 +21,14 @@ def test_short_delays():
     assert response.status_code == 200
     assert "9, 81" in response.text
 
-pytest.__retry_delay = 0.4
-@retry(tries=6)
+pytest.__retry_delay = 0.25
+@retry(tries=4)
 def retry_my_function():
-    pytest.__retry_delay = pytest.__retry_delay - 0.1
+    pytest.__retry_delay = pytest.__retry_delay - 0.05
     return get_with_delay(pytest.__retry_delay) 
 
 def get_with_delay(delay):
-    return requests.get('http://localhost:5010/hang/' + str(delay), timeout=0.1)
+    return requests.get('http://localhost:5010/hang/' + str(delay), timeout=0.11)
 
 def test_longer_delays():
     with pytest.raises(requests.exceptions.ConnectionError):
