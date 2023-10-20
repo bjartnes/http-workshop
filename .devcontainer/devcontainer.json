@@ -2,5 +2,6 @@
     "build": {
         "dockerfile": "DOCKERFILE"
     },
-    "forwardPorts": [5432]
+    "forwardPorts": [5432],
+    "postCreateCommand": "pip3 install -r requirements.txt"
 }

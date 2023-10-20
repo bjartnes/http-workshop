@@ -11,5 +11,3 @@ RUN apt-get update \
 #    && apt-get -y install --no-install-recommends k6
 
 RUN npm install --global carbonyl
-RUN pip3 install -r requirements.txt
-flask requests pytest retry
