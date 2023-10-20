@@ -3,7 +3,7 @@ import time
 import requests
 import pytest
 from requests.adapters import HTTPAdapter
-from retry import retry
+from tenacity import retry, stop_after_attempt
 from urllib3 import Retry
 from app import app
 import os
@@ -38,7 +38,7 @@ def test_short_delays():
     assert "9, 81" in response.text
 
 pytest.__retry_delay = 0.25
-@retry(tries=4)
+@retry(stop=stop_after_attempt(4))
 def retry_get_with_delay():
     pytest.__retry_delay = pytest.__retry_delay - 0.05
     return get_with_delay(pytest.__retry_delay) 
