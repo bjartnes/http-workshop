@@ -1,4 +1,4 @@
 flask
 requests 
 pytest 
-retry
+tenacity
