@@ -3,5 +3,12 @@
         "dockerfile": "DOCKERFILE"
     },
     "forwardPorts": [5432],
-    "postCreateCommand": "pip3 install -r requirements.txt"
+	"postCreateCommand": "pip3 install -r requirements.txt",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hbenl.vscode-test-explorer"
+			]
+		}
+	}
 }
