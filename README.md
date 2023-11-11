@@ -11,6 +11,10 @@ My [NDC 2023](https://ndcoslo.com/agenda/part-12-artisanal-http-or-http-by-hand-
 > real Linux box). If you would like to do the workshop in a pair, bring a friend - or let us know and we can hook you up with someone. For those that prefer to work 
 > alone, it is perfectly fine to talk to your own browser on your own laptop, too.
 
+# Demonstration recorded talk on the topic
+This is a speed-run on a lot of the parts - not all - in this workshop if you are interested in what you could end up with learning and being able to do at the end of this workshop.
+[![Demo](https://img.youtube.com/vi/mhxm-Wrh8YY/0.jpg)](https://www.youtube.com/watch?v=mhxm-Wrh8YY "Demo")
+
 ## Running the workshop/tools
 There are a varieties of tools we can use for this workshop, some tools will be considers "must-haves", some are fun to try and optional.
 They can be run either in GitHub codespace, as dev containers locally on your laptop or by installing the tools on your linux machine, if you have a Mac it might work, on Windows the only reasonable option is to use WSL2 or a devcontainer. All these options will be decsribed in detail.
