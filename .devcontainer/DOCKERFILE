@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 RUN apt-get update \
     && apt-get -y install --no-install-recommends netcat net-tools dnsutils nginx gnupg2 tcpdump jq ncat libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev libasound2 npm python3-pip
 
